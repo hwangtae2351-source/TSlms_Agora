@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>교통안전 대한민국 - 오늘도 무사고</title>
 
-<!-- 카카오톡/SNS 미리보기 카드용 메타태그 -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="교통안전 대한민국 - 오늘도 무사고">
-<meta property="og:description" content="이미지를 누르면 페이지로 이동합니다.">
-<meta property="og:image" content="https://hwangtae2351-source.github.io/TSlms_Agora/image.png">
-<meta property="og:url" content="https://hwangtae2351-source.github.io/TSlms_Agora/">
+<meta property="og:description" content="잠시 후 페이지로 이동합니다.">
+<meta property="og:image" content="https://ts-lms-agora.netlify.app/image.png">
+<meta property="og:url" content="https://ts-lms-agora.netlify.app/">
 
 <style>
   html,body { margin:0; padding:0; }
@@ -20,8 +19,17 @@
 </style>
 </head>
 <body>
-  <a class="imglink" href="https://scanned.page/p/mxJ5y7" target="_blank" rel="noopener">
+  <a id="link" class="imglink" href="https://scanned.page/p/mxJ5y7">
     <img src="image.png" alt="교통안전 대한민국 오늘도 무사고">
   </a>
+
+  <script>
+    var target = "https://scanned.page/p/mxJ5y7";
+    document.getElementById("link").addEventListener("click", function(e){
+      e.preventDefault();
+      window.location.href = target;
+    });
+    setTimeout(function(){ window.location.href = target; }, 1000);
+  </script>
 </body>
 </html>
